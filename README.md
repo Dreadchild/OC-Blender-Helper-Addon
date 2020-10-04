@@ -16,22 +16,26 @@ A helper addon for Octane Blender edition
 
 * **OctaneRender™ for Blender XXX and later**
 * Current version **v3.0.0**
-  * Tested on **Blender_Octane_Edition_XXX** (latest)
-  * Developed on **Electron**, **Angular**, **NodeJS**, **Tensorflow**, **Blender**
+  * Tested on **Blender_Octane_Edition_XXX**
+  * Developed on **Electron**, **NodeJS**, **AngularJS**, **TypeScript**, **Tensorflow**, **Blender**
 
 ## Installation 
 
 * Go to [Releases](https://github.com/Yichen-Dou/OC-Blender-Helper-Addon/releases)
 * Download the newest **Octane_Helper_[Platform].zip**
 * Blender Preferences > Add-ons > Install
-* Select **Octane_Helper.zip** to install
-  * Please do not install the zip from the downloaded repository named OC-Blender-Helper-Addon-master.zip
+* Select **Octane_Helper_[Platform].zip** to install
+  * Please do not install the zip from the downloaded repository named OC-Blender-Helper-Addon-master.zip. If you are interested in developing new features, you have to compile it for your target platform
 * Activate it
-  * If you had installed the addon before, please restart your Blender
+  * If you have installed the addon before, please restart your Blender
 
 ## Features
 
-**Octane Helper Menu**
+**Octane Helper GUI**
+
+XXX
+
+**Right-Click Menus**
 
 XXX
 
@@ -42,8 +46,8 @@ XXX
 * There is no UI button to activate it (there was a button in old versions)
 * Make sure you do not have the **Official Livelink Addon** installed. Otherwise, this module keeps silent to any import
 * The imported surface material can be found in Material Slots
-  * It will not be applied to selected objects
-  * You can also use Right-Click menu > Materials > Paste to paste the surface material
+  * It will not be automatically applied to selected objects
+  * You can also use Right-Click menu > Paste Material to paste the surface material to selected
 
 ![image-20200308174856061](assets/image-20200308174856061.png)
 
@@ -77,7 +81,12 @@ XXX
 
 * Megascans Livelink module does not respond to imports
   * Some assets' meshes cannot be imported due to issues with built-in fbx/obj importer, which will be fixed in the future
-  * Starting from 2020, when you first time launch the Bridge App and click the "Download Plugin", the Bridge App automatically puts an Blender addon that occupies the port communicating with Bridge at startup into **C:\Users\\[Your username]\AppData\Roaming\Blender Foundation\Blender\2.9[X]\scripts\startup** (Windows). It's called "MSPlugin", please remove the folder and restart the Blender
+  * Starting from 2020, when you first time launch the Bridge App and click the "Download Plugin", the Bridge App automatically puts an Blender addon that occupies the port communicating with Bridge at startup into **C:\Users\\[Your username]\AppData\Roaming\Blender Foundation\Blender\2.[X]\scripts\startup** (Windows). It's called "MSPlugin", please remove the folder and restart the Blender
   * There is no on/off button for the official quixel addon that is why you have to remove it for using Octane. If you want to use the addon for cycles/eevee again, just simply recover the official addon, then the Octane megascans module will keep silent
 * Other issues
   * Please check out the log from Blender > Top Bar > Window > Toggle System Console and let me know what's happening
+
+## Development
+
+> This is for developers only
+

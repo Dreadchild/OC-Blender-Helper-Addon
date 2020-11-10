@@ -4,7 +4,7 @@ A helper addon for Octane Blender edition
 
 
 
-> I developed this addon for speeding up user workflow, so users can access functions powered by Octane and AI, and newcomers can know where to start
+> I developed this addon for speeding up user workflow, so users can access powerful functions provided by Octane and AI to make their projects, and newcomers can know where to start
 
 > I welcome issue reports, please let me know where to promote and fix
 
@@ -39,14 +39,12 @@ XXX
 
 XXX
 
-**Megascans Livelink Module**
+**Megascans Module**
 
-* Make sure the **Octane render is enabled**, otherwise the addon declines to import the asset
-* It starts automatically when you open the Octane Blender
-* There is no UI button to activate it (there was a button in old versions)
-* Make sure you do not have the **Official Livelink Addon** installed. Otherwise, this module keeps silent to any import
+* **Since v3.0.0, the Megascans module no longer listens to the Bridge App. Instead, megascans assets can be automatically detected by Octane Helper, and you can locate them in Assets library alongside with any other asset you have**
+  * This means, do not click the Export button in the Bridge App. You just need to download them and use them in Octane Helper's Assets Library :) 
 * The imported surface material can be found in Material Slots
-  * It will not be automatically applied to selected objects
+  * It will not automatically  be applied to selected objects
   * You can also use Right-Click menu > Paste Material to paste the surface material to selected
 
 ![image-20200308174856061](assets/image-20200308174856061.png)
@@ -55,11 +53,11 @@ XXX
 
 ![image-20200613123137705](assets/image-20200613123137705.png)
 
-**Minimum textures to get a correct response for Megascans Livelink**
+**Minimum textures to get a correct response for Megascans Module**
 
 ![image-20200308173100845](assets/image-20200308173100845.png)
 
-**Supported Textures for Megascans Livelink**
+**Supported Textures for Megascans Module**
 
 | Textures         | Info                             |
 | ---------------- | -------------------------------- |
@@ -79,14 +77,6 @@ XXX
 
 ## Questions
 
-* Megascans Livelink module does not respond to imports
-  * Some assets' meshes cannot be imported due to issues with built-in fbx/obj importer, which will be fixed in the future
-  * Starting from 2020, when you first time launch the Bridge App and click the "Download Plugin", the Bridge App automatically puts an Blender addon that occupies the port communicating with Bridge at startup into **C:\Users\\[Your username]\AppData\Roaming\Blender Foundation\Blender\2.[X]\scripts\startup** (Windows). It's called "MSPlugin", please remove the folder and restart the Blender
-  * There is no on/off button for the official quixel addon that is why you have to remove it for using Octane. If you want to use the addon for cycles/eevee again, just simply recover the official addon, then the Octane megascans module will keep silent
 * Other issues
   * Please check out the log from Blender > Top Bar > Window > Toggle System Console and let me know what's happening
-
-## Development
-
-> This is for developers only
 
